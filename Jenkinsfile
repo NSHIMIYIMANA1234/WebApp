@@ -2,21 +2,27 @@
 pipeline {
     agent any
 
-    tools {
-        nodejs 'NodeJS-22'
-    }
-
     stages {
 
         stage('Install Dependencies') {
             steps {
-                sh 'npm install'
+                sh '''
+                    docker run --rm \
+                        -v "$WORKSPACE:/app" \
+                        -w /app \
+                        node:22-alpine npm install
+                '''
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh 'npm test'
+                sh '''
+                    docker run --rm \
+                        -v "$WORKSPACE:/app" \
+                        -w /app \
+                        node:22-alpine npm test
+                '''
             }
         }
 
