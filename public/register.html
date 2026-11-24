@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create account | CODERWANDA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">CODERWANDA</a>
+    <nav><a href="login.html">Login</a></nav>
+  </header>
+  <main class="form-wrap">
+    <form id="register-form" class="form-card">
+      <p class="eyebrow">JOIN CODERWANDA</p>
+      <h1>Create your account</h1>
+      <label>Full name<input name="name" required autocomplete="name" placeholder="Your full name"></label>
+      <label>Email address<input name="email" type="email" required autocomplete="email" placeholder="you@example.com"></label>
+      <label>Password<input name="password" type="password" minlength="8" required autocomplete="new-password" placeholder="At least 8 characters"></label>
+      <button class="button full" type="submit">Register</button>
+      <p id="message" class="message" role="status"></p>
+      <p class="form-foot">Already registered? <a href="login.html">Sign in</a></p>
+    </form>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

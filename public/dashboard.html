@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | CODERWANDA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">CODERWANDA</a>
+    <nav aria-label="Account navigation">
+      <button id="logout-button" type="button" class="link-button">Logout</button>
+    </nav>
+  </header>
+
+  <main class="hero dashboard">
+    <section aria-labelledby="dashboard-heading">
+      <p class="eyebrow">YOUR ACCOUNT</p>
+      <h1 id="dashboard-heading">Hello, <span id="user-name">user</span>!</h1>
+      <p class="intro">You are logged in. You can now access the application information.</p>
+    </section>
+
+    <section class="info-card" aria-labelledby="info-heading">
+      <h2 id="info-heading">Application information</h2>
+      <p>This is the protected dashboard for the CODERWANDA WebApp Project.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
